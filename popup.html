@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScrollMark</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<header>
+  <div class="brand"><img src="icons/icon-48.png" alt="" width="24" height="24">ScrollMark</div>
+  <button id="save" class="primary">＋ Save current position</button>
+</header>
+<div id="status" role="status"></div>
+<main>
+  <div class="section-head">
+    <h1>Saved positions</h1>
+    <span id="count">0</span>
+  </div>
+  <input id="search" type="search" placeholder="Search saved positions" aria-label="Search saved positions" hidden>
+  <div id="empty" class="empty">No saved positions yet.<br>Scroll to a spot and save it.</div>
+  <ul id="items"></ul>
+</main>
+<footer>
+  <span>Saved locally in this Firefox profile.</span>
+  <button id="backup" class="link">Export / import</button>
+</footer>
+<script src="popup.js"></script>
+</body>
+</html>
